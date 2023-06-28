@@ -1,12 +1,8 @@
 import "./dif.scss"
-
+import { Link } from "react-router-dom"
 const Dif = () => {
 
-    const handleDifficulty = (e:any) =>{
-    console.log(e.target)
     
-
-    }
 
 
   return (
@@ -14,9 +10,13 @@ const Dif = () => {
   <div className="background">
     <h2 className="background__h2">choose difficulty</h2>
       <div className="choose">
-        <button  onClick={handleDifficulty} className="choose__btn" id="easy">easy</button>
-        <button onClick={handleDifficulty} className="choose__btn"  id="normal">normal</button>
-        <button onClick={handleDifficulty} className="choose__btn"  id="hard">hard</button>
+
+       <Link to="easy"><button  className="choose__btn" id="easy">easy</button> </Link> 
+
+       <Link to="normal"> <button className="choose__btn"  id="normal">normal</button></Link> 
+
+       <Link to="hard"><button className="choose__btn"  id="hard">hard </button> </Link> 
+       
       </div>
   </div>
     </div>
