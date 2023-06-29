@@ -1,33 +1,22 @@
-// import { useState } from "react"
+
 import "./style/easy.scss"
-import RandomColor from "./RandomColor"
+import RandomColor from "../../components/helper/RandomColor"
+
+
+
 
 const Easy = () => {
   
-  // const [rColor, setRColor] = useState("")
-
-  const colors = ["#75bdd1", "#f6290c", "#ff0084", "#91e842", "#ff920a", "#c146a1", "#fccd4d"]
-  // const empty = ["#000000"]
-
-  const opOne = Math.floor(Math.random() * colors.length)
-  const opTwo = Math.floor(Math.random() * colors.length)
-  const opThree = Math.floor(Math.random() * colors.length)
-  const opFour = Math.floor(Math.random() * colors.length)
-  const opFiv = Math.floor(Math.random() * colors.length)
-  const opSix = Math.floor(Math.random() * colors.length)
-  const opSeven = Math.floor(Math.random() * colors.length)
-  // const eOpt = Math.floor(Math.random() * empty.length)
-  
-  
-  
+ 
   return (
    
     <div className="main">
-      <RandomColor /> 
+        <RandomColor /> 
+        
         <div className="container">
             <div className="top">
                 <div className="top__one">
-                   <div className="top__one__pOne" style={{
+                   {/* <div className="top__one__pOne" style={{
                     backgroundColor:colors[opOne]
                    }}></div>
                    <div className="top__one__pTwo" style={{
@@ -105,7 +94,7 @@ const Easy = () => {
                     backgroundColor:colors[opThree]
                    }}></div>
                    <div className="bottom__three__pTwo" style={{
-                    backgroundColor:colors[opFiv]
+                    backgroundColor:
                    }}></div>
                   <div className="bottom__three__pThree" style={{
                     backgroundColor:colors[opSeven]
@@ -116,7 +105,7 @@ const Easy = () => {
                    <div className="bottom__four__pTwo"></div>
                   <div className="bottom__four__pThree" style={{
                     backgroundColor:colors[opSeven]
-                   }}></div>
+                   }}></div> */}
                 </div>
             </div>
             
